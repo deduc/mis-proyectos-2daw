@@ -1,0 +1,301 @@
+@keyframes DesvanecerNegro{
+    0%{
+        background-color: black;
+    }
+    25%{
+        background-color: black;
+    }
+    26%{
+        background-color: white;
+    }
+    27%{
+        background-color: black;
+    }
+    28%{
+        background-color: black;
+    }
+    29%{
+        background-color: white;
+    }
+    30%{
+        background-color: black;
+    }
+    50%{
+        background-color: rgb(28, 35, 66);
+    }
+    75%{
+        background-color: rgb(21, 34, 93);
+    }
+    100%{
+        background-color: rgb(42, 56, 119);
+    }
+}
+
+@keyframes RayoDerecha{
+    100%{
+        top: 150%;
+        left: -50%;
+    }
+}
+
+@keyframes RayoIzquierda{
+    100%{
+        top: 150%;
+        left: 150%;
+    }
+}
+
+@keyframes SwingSword{
+    0%{
+        top: -100%;
+    }
+    100%{
+        top: 70%;
+    }
+}
+
+@keyframes RomperRoca {
+    0%{
+        clip-path: polygon(100% 100%, 95% 79%, 81% 57%, 49% 75%, 33% 55%, 8% 73%, 0 100%);
+    }
+    100%{
+        clip-path: polygon(100% 100%, 95% 79%, 86% 62%, 66% 54%, 31% 53%, 8% 73%, 0 100%);
+    }
+}
+
+@keyframes PiedraSaltando1 {
+    0%{
+        bottom: 15%;
+        left: 35%;
+    }
+    15%{
+        bottom: 30%;
+        left: 30%;
+        transform: rotate(-20deg);
+    }
+    30%{
+        bottom: 35%;
+        left: 25%;
+        transform: rotate(-30deg);
+    }
+    45%{
+        bottom: 40%;
+        left: 20%;
+        transform: rotate(-40deg);
+    }
+    60%{
+        bottom: 34%;
+        left: 15%;
+        transform: rotate(-50deg);
+    }
+    75%{
+        bottom: 28%;
+        left: 10%;
+        transform: rotate(-60deg);
+    }
+    90%{
+        bottom: 20%;
+        left: 5%;
+        transform: rotate(-75deg);
+    }
+    100%{
+        bottom: 0%;
+        left: 2%;
+        transform: rotate(-85deg);
+    }
+}
+
+@keyframes PiedraSaltando2 {
+    0%{
+        bottom: 15%;
+        left: 45%;
+    }
+    15%{
+        bottom: 19%;
+        left: 40%;
+        transform: rotate(-20deg);
+    }
+    30%{
+        bottom: 24%;
+        left: 35%;
+        transform: rotate(-30deg);
+    }
+    45%{
+        bottom: 26%;
+        left: 30%;
+        transform: rotate(-40deg);
+    }
+    60%{
+        bottom: 21%;
+        left: 25%;
+        transform: rotate(-50deg);
+    }
+    75%{
+        bottom: 10%;
+        left: 20%;
+        transform: rotate(-60deg);
+    }
+    90%{
+        bottom: 5%;
+        left: 15%;
+        transform: rotate(-75deg);
+    }
+    100%{
+        bottom: 0%;
+        left: 7%;
+        transform: rotate(-85deg);
+    }
+}
+
+@keyframes PiedraSaltando3 {
+    0%{
+        bottom: 15%;
+        left: 55%;
+    }
+    15%{
+        bottom: 30%;
+        left: 48%;
+        transform: rotate(-20deg);
+    }
+    30%{
+        bottom: 35%;
+        left: 43%;
+        transform: rotate(-30deg);
+    }
+    45%{
+        bottom: 40%;
+        left: 37%;
+        transform: rotate(-40deg);
+    }
+    60%{
+        bottom: 31%;
+        left: 31%;
+        transform: rotate(-50deg);
+    }
+    75%{
+        bottom: 23%;
+        left: 27%;
+        transform: rotate(-60deg);
+    }
+    90%{
+        bottom: 15%;
+        left: 22%;
+        transform: rotate(-75deg);
+    }
+    100%{
+        bottom: -1%;
+        left: 17%;
+        transform: rotate(-50deg);
+    }
+}
+
+@keyframes PiedraSaltando4 {
+    0%{
+        bottom: 15%;
+        left: 55%;
+    }
+    15%{
+        bottom: 21%;
+        left: 61%;
+    }
+    30%{
+        bottom: 25%;
+        left: 67%;
+    }
+    60%{
+        bottom: 23%;
+        left: 71%;
+    }
+    100%{
+        bottom: -1%;
+        left: 80%;
+        transform: rotate(-50deg);
+    }
+}
+
+@keyframes PiedraSaltando5 {
+    0%{
+        bottom: 10%;
+        left: 65%;
+    }
+    15%{
+        bottom: 23%;
+        left: 71%;
+    }
+    30%{
+        bottom: 27%;
+        left: 77%;
+    }
+    60%{
+        bottom: 11%;
+        left: 81%;
+    }
+    100%{
+        bottom: -1%;
+        left: 90%;
+        transform: rotate(-50deg);
+    }
+}
+
+@keyframes PiedraSaltando6 {
+    0%{
+        bottom: 10%;
+        left: 65%;
+    }
+    15%{
+        bottom: 22%;
+        left: 76%;
+    }
+    30%{
+        bottom: 25%;
+        left: 77%;
+    }
+    60%{
+        bottom: 16%;
+        left: 86%;
+    }
+    100%{
+        bottom: -1%;
+        left: 95%;
+        transform: rotate(-50deg);
+    }
+}
+
+/* just changing the position of image 
+of rain using keyframes*/
+@keyframes rain {
+    0% {
+        background-position: 0 0;
+        opacity: 1;
+    }
+
+    100% {
+        background-position: 8% 80%;
+        opacity: 1;
+    }
+}
+/* applying filter at different angle
+on diffrent interval using keyframe*/
+@keyframes color-change {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    50% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+@keyframes ChoqueLuz{
+    0%{
+        opacity: 1;
+        width: 0vw;
+        height: 0vw;
+    }
+    100%{
+        width: 40vw;
+        height: 40vw;
+    }
+}

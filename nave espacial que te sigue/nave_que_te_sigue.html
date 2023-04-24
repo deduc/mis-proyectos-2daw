@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nave que te sigue</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            /* cursor: none; */
+        }
+
+        body{
+            overflow: hidden;
+        }
+
+        .contenedor{
+            width: 100vw;
+            height: 100vh;
+        }        
+        .contenedor img{
+            width: 100vw;
+            height: 100vh;
+            object-fit: fill;
+        }
+
+        img.nave{
+            width: 100px;
+            height: 100px;
+            object-fit: scale-down;
+            transform: translate(-50%, -50%);
+            
+            position: fixed;
+            top: 50%;
+            left: 50%;
+        }
+        img.disparo{
+            width: 100px;
+            height: 100px;
+            object-fit: scale-down;
+            transform: translate(-50%, -50%);
+            
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <img class="disparo" src="src/disparo.png" id="bala">
+        <img class="nave" src="src/nave_espacial.png" id="nave_espacial">
+        <img src="src/fondo_espacio.webp" id="fondo">
+    </div>
+
+    <script>
+        function mover_nave($nave){
+            var $raton_x = event.clientX;
+            var $raton_y = event.clientY;
+
+            $nave.style.top = $raton_y + "px";
+            $nave.style.left = $raton_x + "px";
+        }
+
+        
+        function disparar($bala){
+            var $raton_x = event.clientX;
+            var $raton_y = event.clientY;
+
+            // TODO
+            $bala.style.top = $raton_y + "px";
+            $bala.style.left = $raton_x-100 + "px";
+            console.log(1);
+        }
+
+
+        $nave = document.getElementById("nave_espacial");
+        $fondo = document.getElementById("fondo");
+        $bala = document.getElementById("bala");
+
+        $nave.addEventListener('mousemove', () => mover_nave($nave));
+        $fondo.addEventListener('mousemove', () => mover_nave($nave));
+
+        $nave.addEventListener('click', () => disparar($bala));
+    </script>
+</body>
+</html>

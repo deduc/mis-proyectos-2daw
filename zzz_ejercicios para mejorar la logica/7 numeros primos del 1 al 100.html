@@ -1,0 +1,35 @@
+<script>
+    /*
+        numero primo = 2 divisores
+        divisores del primo serán 0 y X
+    */
+    const ULTIMO_NUMERO = 100
+    numeroDivisores = 0
+    listaNumerosPrimos = []
+
+
+    listaNumerosPrimos.push(1)
+
+    /*  Evalúo los números del 2 al 100 pues el 1 ya cuenta como primo y es el único número
+        primo que tiene 1 único divisor y no 2 como los demás.
+    */
+    for(x=2; x<=ULTIMO_NUMERO; x++){
+        numeroDivisores = 0
+
+        /*  Para cada número primo a evaluar, voy a dividirlo entre los anteriores y entre sí mismo.
+            Si la división da un resto = 0, sumo 1 al numero de divisores numeroDivisores
+        */
+        for(y=1; y<=x; y++){
+            if(x % y == 0){
+                numeroDivisores++
+            }
+        }
+
+        // Si el numero de divisores es == 2, lo añado a la lista de primos
+        if(numeroDivisores == 2){
+            listaNumerosPrimos.push(x)
+        }
+    }
+
+    document.write(listaNumerosPrimos)
+</script>

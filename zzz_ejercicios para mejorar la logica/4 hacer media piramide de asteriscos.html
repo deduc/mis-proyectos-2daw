@@ -1,0 +1,18 @@
+<script>
+    numeroFilas = 10
+    contadorFilaActual = 1
+    caracterAPintar = "*"
+    cadenaFila = "";
+
+    while(contadorFilaActual <= numeroFilas){
+        cadenaFila = ""
+        for(x=0; x<contadorFilaActual; x++){
+            cadenaFila += caracterAPintar
+        }
+
+        document.write(cadenaFila + "<br>")
+
+
+        contadorFilaActual++
+    }
+</script>

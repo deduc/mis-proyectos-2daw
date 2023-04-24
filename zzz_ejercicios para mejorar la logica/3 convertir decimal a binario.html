@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+convertir decimal a binario
+<br>
+<script>
+    $numero = 7
+    $aux = $numero
+    $resultado = []
+    $seguir_ejecutando = true
+
+    // Procedo a realizar los cálculos
+    while($seguir_ejecutando == true){
+        // meto en el array $resultado el resultado del resto de la división del numero / 2
+        $resultado.push($aux % 2)
+        // divido el número entre 2 y lo convierto a entero
+        $aux = parseInt($aux / 2)
+
+        if($aux <= 0){
+            $seguir_ejecutando = false;
+        }
+    }
+
+    // Le doy la vuelta al array generado para imprimir el resultado correctamente
+    $resultado = $resultado.reverse()
+
+    // Imprimo el resultado
+    document.write("El número decimal '"+ $numero + "' es el siguiente array: [" + $resultado + "]")
+</script>

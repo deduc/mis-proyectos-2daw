@@ -1,0 +1,80 @@
+h1{
+    text-align: center;
+}
+
+/*
+    ESTILO DEL BOTÓN 
+    Y SU CONTENEDOR
+*/
+
+.contenedor{
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.boton{
+    width: 20vw;
+    height: 15vh;
+    background-color: black;
+    color: white;
+    text-align: center;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton:hover{
+    background-color: gray;
+    border: 0.5vw solid black;
+    color: white;
+
+    box-sizing: border-box;
+}
+
+.boton:active{
+    background-color: lightgray;
+    color: black;
+    border: 0.5vw solid black;
+}
+
+
+/*
+    ESTILO DEL DIV
+    DE CONTROLES
+*/
+
+.contenedor_controles{
+    width: auto;
+    height: auto;
+    padding: 1vw;
+    
+    background-color: black;
+    color: white;
+    
+    transform: translate(-50%, -50%);
+    position: fixed;
+    bottom: -10vh;
+    left: 50%;
+}
+
+.contenedor_controles p{
+    font-size: large;
+}
+
+
+/*
+    Tablero
+*/
+.tablero{
+    /* 3vw por 10 cuadrados */
+    width: 30vw;
+    /* 1vw por 30 */
+    height: 30vw;
+    background-color: white;
+    border: 1px solid black;
+}

@@ -1,0 +1,28 @@
+contar palabras de un texto introducido por consola
+<br>
+<script>
+    texto = ""
+    palabra = ""
+    letraAEvaluar = ""
+    contadorPalabras = 0
+    
+
+    texto = prompt("Dime un texto y te dire cuantas palabras hay")
+
+    // añado 1 palabra al contador si siempre tiene 1 o mas letras
+    if(texto.length > 0){
+        contadorPalabras++
+        for(x=0; x < texto.length; x++){
+            letraAEvaluar = texto[x]
+
+            if(letraAEvaluar != " "){
+                palabra += texto[x]
+            }
+            else{
+                contadorPalabras++
+            }
+        }
+    }
+
+    document.write("El texto tiene " + contadorPalabras + " palabras")
+</script>

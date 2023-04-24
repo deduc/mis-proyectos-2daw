@@ -1,0 +1,40 @@
+<style>
+    *{
+        font-family:monospace;
+        font-size: 1vw;
+    }
+</style>
+<pre></pre>
+<script>
+    filasPiramide = 10
+    // 11 columnas
+    columnasPiramide = (2 * filasPiramide) - 1
+    
+    caracterAPintar = "+"
+    caracterSeparador = "_"
+    
+    filaAPintar = ""
+
+    
+    filaAPintar += caracterSeparador.repeat(columnasPiramide / 2 - 1) + 
+        caracterAPintar + caracterSeparador.repeat(columnasPiramide / 2 - 1) + "<br>"
+    
+    for(fila=2; fila<=filasPiramide; fila++){
+        document.write(filaAPintar)
+        console.log(filaAPintar)
+        filaAPintar = ""
+        
+        // Pinto primera mitad de la fila
+        filaAPintar += caracterSeparador.repeat(columnasPiramide/2 - fila)
+        
+        while(filaAPintar.length < columnasPiramide/2 - 3){
+            filaAPintar += caracterAPintar
+        }
+
+        // Pinto los asteriscos de la piramide
+        filaAPintar += caracterAPintar.repeat(1 + fila)
+
+        // Pinto la otra mitad de la piramide
+        filaAPintar += caracterSeparador.repeat(columnasPiramide/2 - fila) + "<br>"
+    }
+</script>

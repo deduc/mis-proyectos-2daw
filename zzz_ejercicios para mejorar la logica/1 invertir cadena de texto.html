@@ -1,0 +1,82 @@
+invertir una cadena de texto pasada por parámetros
+<br>
+
+<script>
+    function obtenerLongitudCadena(cadena){
+        // string cadena
+        // return string cadena
+        contadorLetras = 0
+        longitud = 0
+        seguirEjecutando = true
+        error = "ERROR: Longitud de cadena = 0" + "<br>"
+
+        try{
+            if(! cadena[0]){
+                throw valorAEvaluar
+            }
+            else{
+                while(seguirEjecutando){
+                    if(! cadena[longitud]){
+                        seguirEjecutando = false
+                        
+                        error = longitud
+                        console.log(error)
+                        
+                        throw valorAEvaluar
+                    }
+                    
+                    longitud++
+                }
+            }
+        }
+        catch(valorAEvaluar){
+            if(typeof(valorAEvaluar) == "string"){
+                longitud = 0
+                document.write(valorAEvaluar)
+            }
+            else if(typeof(valorAEvaluar) == "number"){
+                longitud = valorAEvaluar
+            }
+        }
+
+        console.log(longitud)
+        
+
+        return longitud
+    }
+
+
+    function invertirCadena(cadena, longitudCadena){
+        // string cadena
+        // int longitudCadena
+        // return string cadena
+        cadenaInvertida = ""
+
+        for(contador = longitudCadena-1; contador >= 0; contador--){
+            cadenaInvertida = cadenaInvertida + cadena[contador]
+        }
+
+        return cadenaInvertida
+    }
+
+
+    function main(){
+        cadena = ""
+        cadenaInvertida = ""
+        longitudCadena = 0
+        
+
+        cadena = prompt("escribe cadena para invertir")
+
+        longitudCadena = obtenerLongitudCadena(cadena)
+        console.log("longitud de la cadena = " + longitudCadena)
+
+        if(longitudCadena > 0){
+            document.write("Cadena de texto = '" + cadena + "'")
+            cadenaInvertida = invertirCadena(cadena, longitudCadena)
+            document.write("<br> Cadena de texto invertida = '" + cadenaInvertida + "'")
+        }
+    }
+
+    main()
+</script>

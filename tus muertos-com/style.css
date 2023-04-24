@@ -1,0 +1,76 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+body{width: 100vw;height: 150vh;}
+/* Ocultar la barra de scroll lateral pero pudiendo hacer scroll */
+body::-webkit-scrollbar {display: none;}
+
+.header{
+    width: 100vw;
+    height: 15vh;
+    
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    overflow: hidden;
+
+    border: 0.2vw solid black;
+}
+.header img#icono{
+    height: 15vh;
+
+    box-sizing: border-box;
+
+    border: 0.2vw solid black;
+}
+
+.header a{
+    width: 12vw;
+    height: 8vh;
+
+    border-top-left-radius: 1vw;
+    border-bottom-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+
+    text-align: center;
+    font-size: 0.8vw;
+    text-decoration: none;
+    
+    color: white;
+    border: 0.2vw solid rgb(125, 2, 2);
+    background-color: rgb(221, 0, 0);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.5s;
+}
+
+.header a:hover{
+    width: 13vw;
+    background-color: black;
+    border-color: red;
+}
+
+.contenido{
+    height: 100vh;
+
+    box-sizing: border-box;
+    
+    border: 0.2vw solid black;
+}
+
+.footer{
+    height: auto;
+    box-sizing: border-box;
+
+    border: 0.2vw solid black;
+}
