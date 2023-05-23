@@ -1,0 +1,476 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    background-color: rgb(28, 28, 59);
+}
+/* Elimino la barra de scroll lateral */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* ------------------------------------- */
+.contenedor_logo_dark_souls{
+    width: 100vw;
+    height: 25vw;
+    background-color: black;
+}
+
+.logo_dark_souls{
+    width: 100vw;
+    height: 15vw;
+    margin-bottom: 10vw;
+    background-color: black;
+
+    position: relative;
+    top: 10vh;
+
+    animation-name: des-oscurecer;
+    animation-duration: 5s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+@keyframes des-oscurecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* --------------------------- */
+nav{
+    width: 100vw;
+    max-height: 5vw;
+
+    background-color: gray;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    z-index: 100;
+    position: sticky;
+    top: 0px;
+
+    transition: 0.5s;
+}
+
+
+.contenedor_desplegable{
+    width: 40vw;
+    height: 5vw;
+    
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    transition: 1s;
+}
+
+.contenedor_desplegable #nav_icono{
+    transition: 0s;
+}
+
+.contenedor_desplegable #nav_icono:hover{
+    background-color: lightgray;
+}
+
+.contenedor_desplegable #nav_icono:active{
+    background-color: white;
+}
+
+img#nav_icono{
+    width: 10%;
+
+    transition: 1s;
+}
+
+.contenedor_desplegable p{
+    font-size: 2vw;
+    margin-left: 1vw;
+    color: aliceblue;
+
+    transition: 1s;
+}
+
+.contenedor_links{
+    width: 40vw;
+    height: 5vw;
+    
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contenedor_links a{
+    font-size: 1.2vw;
+    color: aliceblue;
+    padding: 0.5vw;
+}
+
+.contenedor_links a:hover{
+    color: black;
+    background-color: lightgray;
+}
+
+/* ------------------------------------- */
+.desplegable{
+    width: 30vw;
+    height: 100%;
+
+    background-color: black;
+    /* opacity: 0.5; */
+    
+    position: fixed;
+    top: 0px;
+    left: -30vw;
+
+    z-index: 99;
+
+    transition: 0.5s;
+}
+
+.nav_icono_desplegable{
+    width: 10%;
+    position: absolute;
+    top: 2vh;
+    left: 1vw;
+}
+
+.nav_icono_desplegable:hover{
+    background-color: gray;
+}
+.nav_icono_desplegable:active{
+    background-color: white;
+}
+
+.texto_submenu{
+    color: white;
+    position: absolute;
+    top: -2.5%;
+    left: 15%;
+}
+
+.articulo_submenu{
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 35%;
+    left: 50%;
+
+    color: white;
+}
+
+.articulo_submenu table{
+    width: 20vw;
+    height: 20vw;
+}
+
+/* ------------------------------------- */
+.contenedor_castillo_pequeño{
+    margin-top: 15vw;
+    margin-bottom: 15vw;
+
+    box-sizing: border-box;
+
+    position: relative;
+    overflow-x: hidden;
+}
+
+.castillo_pequeño{
+    width: 35vw;
+    height: 35vw;
+
+    transform: translate(-50%, -50%);
+    transition: 1s;
+    
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    
+    z-index: 99;
+}
+.castillo_pequeño:hover{
+    width: 36vw;
+    height: 36vw;
+}
+
+.contenedor_descripcion_castillo{
+    width: 30vw;
+    height: 30vw;
+
+    color: white;
+    font-weight: bolder;
+
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    z-index: 99;
+}
+
+.contenedor_descripcion_castillo h1{
+    color: white;
+    font-size: 2vw;
+
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.5vw;
+}
+
+.tabla_descripcion_castillo{
+    color: white;
+    font-size: 1.2vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.fila{
+    width: 20vw;
+    height: 4vw;
+}
+
+#fila1:hover{
+    background-color: rgba(255, 255, 255, 0.501);
+}
+#fila2:hover{
+    background-color: rgba(255, 255, 255, 0.501);
+}
+#fila3:hover{
+    background-color: rgba(255, 255, 255, 0.501);
+}
+#fila4:hover{
+    background-color: rgba(255, 255, 255, 0.501);
+}
+#fila5:hover{
+    background-color: rgba(255, 255, 255, 0.501);
+}
+
+.fila td{
+    width: 15vw;
+    text-align: center;
+    
+    border: 1px solid gray;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5vw;
+}
+
+.fondo_castillo_pequeño{
+    height: 100vh;
+    
+    animation-name: mover_fondo_castillo_pequeño;
+    animation-duration: 50s;
+    animation-direction: alternate;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+        
+    position: relative;
+    right: 0%;
+}
+
+@keyframes mover_fondo_castillo_pequeño {
+    0%{
+        right: 0%;
+    }
+    100%{
+        right: 100%;
+    }
+}
+
+/* -------------------------------- */
+.foto_castillo_gigante{
+    width: 100vw;
+    height: 100vh;
+}
+
+.foto_castillo_gigante img{
+    width: 100%;
+    height: 100%;
+
+
+    overflow: hidden;
+}
+
+/* ------------------------------- */
+.titulo_carrusel_personajes{
+    margin-top: 10vw;
+    text-align: center;
+    color: white;
+    font-size: 2vw;
+}
+
+.carrusel{
+    width: 70vw;
+    height: 35vw;
+    margin-top: 5vw;
+
+    background-color: gray;
+    
+    transform: translate(-50%, 0%);
+    position: relative;
+    left: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto_enemigo{
+    width: 40vw;
+    height: 30vw;
+}
+
+.boton{
+    width: 5vw;
+    height: 5vw;
+    
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    
+    opacity: 0.3;
+}
+.boton:hover{
+    opacity: 0.6;
+}
+.boton:active{
+    opacity: 1;
+}
+.boton#boton_derecha{
+    left: 95%;
+}
+
+/* ------------------------------- */
+.exposicion_arte{
+    width: 80vw;
+    height: auto;
+    
+    margin-top: 10vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10vw;
+
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    
+    background-color: rgb(20, 20, 54);
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#titulo_arte{
+    font-size: 3vw;
+    text-align: center;
+    margin-bottom: 5vw;
+}
+
+.contenedor_cuadros{
+    width: 60vw;
+    height: auto;
+    margin-bottom: 5vw;
+    
+    border: 1px solid black;
+    background-color: rgb(28, 28, 59);
+    
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contenedor_cuadros img{
+    width: 50%;
+    height: auto;
+}
+.contenedor_cuadros img#cuadro4{
+    width: 30vw;
+    height: 20vw;
+}
+.contenedor_cuadros h1{
+    font-size: 2vw;
+    
+    position: absolute;
+    top: -8%;
+    left: 55%;
+    z-index: 99;
+}
+.contenedor_cuadros p{
+    font-size: 1vw;
+    padding: 2vw;
+    text-align: justify;
+}
+
+#contenedor_cuadros2 h1{
+    left: 60%;
+}
+
+#contenedor_cuadros3 h1{
+    left: 70%;
+}
+
+#contenedor_cuadros4 h1{
+    left: 70%;
+}
+
+
+/* ---------------------------------- */
+#anor_londo_titulo{
+    width: 100vw;
+    margin-top: 1vw;
+    margin-bottom: 10vw;
+    position: relative;
+}
+
+.footer{
+    width: 100vw;
+    height: 30vw;
+    margin-bottom: 2vw;
+    padding-top: 10vw;
+    
+    color: white;
+    background-color: black;
+    
+}
+
+.footer article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    left: 20%;
+}
+
+.icono_pagina{
+    width: 20vw;
+    height: 20vw;
+    
+    position: absolute;
+}
+
+.icono_pagina#icono1{
+    transform: translate(-50%, -50%);
+    top: 75%;
+    left: 50%;
+}
+.icono_pagina#icono2{
+    left: 250%;
+}

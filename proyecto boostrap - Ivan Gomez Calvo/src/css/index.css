@@ -1,0 +1,170 @@
+body{
+    overflow-x: hidden;
+
+    animation-name: fundido_desde_negro;
+    animation-duration: 3s;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+}
+@keyframes fundido_desde_negro {
+    0%{
+        filter: brightness(0%);
+    }
+    100%{
+        filter: brightness(100%);
+    }
+    
+}
+
+.contenedor_enlaces_cabecera{
+    padding-left: 2vw;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    gap: 5vw;
+}
+
+.barra_navegacion{
+    background-color: black;
+    border: 2px solid black;
+
+    position: sticky;
+    top: 0vw;
+
+    z-index: 1000;
+    
+    transition: 1s;
+}
+
+.barra_navegacion .enlace{
+    color: white;
+}
+
+.nav-link:hover{
+    background-color: gray;
+}
+
+/* carrusel */
+.contenedor_carrusel{
+    margin-top: 5vw;
+}
+
+.carrusel{
+    width: auto;
+    height: auto;
+    
+    padding: 1vw;
+
+}
+
+.carrusel .imagen{
+    width: 100%;
+    height: 40vw;
+    object-fit: fill;
+}
+
+.icono_carrusel{
+    opacity: 1;
+}
+
+/* main */
+
+main{
+    margin-top: 5vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+/* articulo 1 */
+
+.articulo1{
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    padding-right: 2vw;
+
+    margin-bottom: 5vw;
+}
+
+
+/* contenedor fondo negro */
+.contenedor_fondo_negro{
+    padding-bottom: 10vw;
+}
+
+/* articulo 2 */
+
+.articulo2{
+    color: white;
+    background-color: black;
+    
+    padding-top: 3vw;
+}
+
+.titulo-discos{
+    padding-top: 5vw;
+}
+
+.tabla_discos img{
+    margin: 1vw;
+    margin-bottom: 5vw;
+}
+
+.disco{
+    opacity: 0.8;
+    transition: 1s;
+}
+
+.disco:hover{
+    opacity: 1;
+    filter: brightness(130%);
+}
+
+
+.tabla_discos:hover{
+    cursor: pointer;
+}
+
+
+/* articulo 3 */
+
+.articulo3{
+    margin-top: 5vw;
+
+    position: relative;
+}
+
+.articulo3 .miniatura{
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.fondo_yt{
+    border-radius: 10vw;
+}
+
+/* articulo 4 */
+.articulo4{
+    margin-top: 5vw;
+    margin-left: 35%;
+}
+
+footer{
+    margin-top: 5vw;
+}
+
+footer *{
+    color: black;
+}
+
+.logo{
+    transform: scale(30%);
+}
+
+.texto_autor{
+    margin-bottom: 5vw;
+    margin-top: 5vw;
+}

@@ -1,0 +1,110 @@
+body{
+    overflow-x: hidden;
+
+    animation-name: fundido_desde_negro;
+    animation-duration: 3s;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+}
+@keyframes fundido_desde_negro {
+    0%{
+        filter: brightness(0%);
+    }
+    100%{
+        filter: brightness(100%);
+    }
+    
+}
+
+header img{
+    height: 30vw;
+}
+
+.contenedor_enlaces_cabecera{
+    padding-left: 2vw;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    gap: 5vw;
+}
+
+.barra_navegacion{
+    background-color: black;
+    border: 2px solid black;
+
+    margin-bottom: 10vw;
+
+    position: sticky;
+    top: 0vw;
+
+    z-index: 1000;
+    
+    transition: 1s;
+}
+
+.barra_navegacion .enlace{
+    color: white;
+}
+
+.nav-link:hover{
+    background-color: gray;
+}
+
+
+/* article */
+h1{
+    margin-left: 2vw;
+    margin-bottom: 5vw;
+    border-bottom: 5px solid black;
+}
+
+p{
+    padding-left: 2vw;
+    padding-right: 2vw;
+    margin-left: 10vw;
+}
+
+.parrafo_descripcion{
+    margin-top: 5vw;
+}
+
+.contenedor_imagen{
+    margin-top: 10vw;
+}
+
+.articulo3{
+    margin-top: 5vw;
+
+    position: relative;
+}
+
+.articulo3 .miniatura{
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.fondo_yt{
+    border-radius: 10vw;
+}
+
+/* footer */
+footer{
+    margin-top: 5vw;
+}
+
+footer *{
+    color: black;
+}
+
+.logo{
+    transform: scale(30%);
+}
+
+.texto_autor{
+    margin-bottom: 5vw;
+    margin-top: 5vw;
+}

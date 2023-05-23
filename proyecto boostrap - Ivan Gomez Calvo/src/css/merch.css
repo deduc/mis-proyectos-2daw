@@ -1,0 +1,174 @@
+body{
+    overflow-x: hidden;
+}
+
+.contenedor_enlaces_cabecera{
+    padding-left: 2vw;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    gap: 5vw;
+}
+
+.barra_navegacion{
+    border: 1px solid white;
+    background-color: black;
+
+    position: fixed;
+    top: 0vw;
+
+    z-index: 1000;
+
+    filter: invert(100%);
+    
+    transition: 1s;
+}
+
+.barra_navegacion .enlace{
+    color: white;
+}
+
+.contenedor_enlaces_discos{
+    width: auto;
+    height: auto;
+
+    padding: 1vw;
+
+    background-color: black;
+    color: yellow;
+    filter: invert(100%);
+    
+    position: fixed;
+    top: 3vw;
+    left: 32vw;
+
+    z-index: 10000;
+    opacity: 0;
+
+    transition: 0.5s;
+}
+
+.disco{
+    cursor: pointer;
+}
+
+.contenedor_enlaces_discos a:link{
+    color: yellow;
+}
+
+.contenedor_enlaces_discos a:visited{
+    color: yellow;
+}
+
+.contenedor_enlaces_discos a:hover{
+    color: yellow;
+}
+
+.contenedor_enlaces_discos a:active{
+    color: yellow;
+}
+
+.desplegable_discos{
+    background-color: black;
+
+    border-radius: 10vw;
+    
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+
+    filter: invert(100%);
+}
+
+.desplegable_discos p{
+    user-select: none;
+}
+
+.texto_lista_discos{
+    font-weight: bolder;
+    font-size: 0.8em;
+}
+
+.desplegable_discos:hover{
+    color: yellow;
+    background-color: black;
+    cursor: pointer;
+}
+
+.nav-link:hover{
+    color: white;
+    background-color: black;
+    
+    filter: invert(100%);
+}
+
+.logo_linkin_park{
+    background-color: black;
+    padding-bottom: 5vw;
+
+    z-index: 100;
+
+    position: relative;
+    top: 5vw;
+}
+
+.img_carrito{
+    width: 2vw;
+    
+    position: absolute;
+    left: 95%;
+}
+
+.img_carrito:hover{
+    filter: invert(100%);
+}
+
+/* contenedor fondo negro */
+.contenedor_fondo_negro{
+    padding-bottom: 10vw;
+}
+
+/* articulo 2 */
+.titulo-discos{
+    padding-top: 5vw;
+}
+
+.disco{
+    opacity: 0.8;
+    transition: 1s;
+    margin-bottom: 5vw;
+}
+
+.contenedor_discos{
+    transform: translateX(-50%);
+    position: relative;
+    left: 50%;
+}
+
+.camiseta{
+    width: 30%;
+    opacity: 0.8;
+    transition: 1s;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+
+.merch_altura_reducida{
+    border: 1px solid black;
+    transform: scale(30%);
+}
+
+footer{
+    margin-top: 5vw;
+}
+
+.logo{
+    transform: scale(30%);
+}
+
+.texto_autor{
+    margin-bottom: 5vw;
+    margin-top: 5vw;
+}
