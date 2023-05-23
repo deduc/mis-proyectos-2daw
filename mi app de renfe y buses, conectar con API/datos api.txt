@@ -1,4 +1,0 @@
-// posiblemente no furule
-idCliente: EMT.SERVICIOS.EMTJSONBETA
-passKey: 4F4EEB75-A822-41E3-817B-AB301D5DA321
-
